@@ -19,7 +19,7 @@ module.exports = {
     'function-max-empty-lines'                         : 0,
     'function-name-case'                               : 'lower',
     'function-parentheses-newline-inside'              : 'always-multi-line',
-    'function-parentheses-space-inside'                : 'never-single-line',
+    'function-parentheses-space-inside'                : 'never',
     'function-url-no-scheme-relative'                  : true,
     'function-url-quotes'                              : 'always',
     'function-url-scheme-whitelist'                    : ['http', 'https', 'data'],
@@ -33,7 +33,7 @@ module.exports = {
 
     'length-zero-no-unit': true,
 
-    'time-no-imperceptible': true,
+    'time-no-imperceptible': true, // remove 8.0.0
 
     'unit-case'      : 'lower',
     'unit-no-unknown': true,
@@ -47,13 +47,13 @@ module.exports = {
     'value-list-max-empty-lines'     : 0,
 
     'custom-property-empty-line-before': 'never',
-    'custom-property-no-outside-root'  : true,
+    'custom-property-no-outside-root'  : true, // duplicated 7.8.0
 
     'shorthand-property-no-redundant-values': true,
 
     'property-case'            : 'lower',
     'property-no-unknown'      : true,
-    'property-no-vendor-prefix': true,
+    'property-no-vendor-prefix': true, // please use AutoPrefixer
 
     'keyframe-declaration-no-important': true,
 
@@ -66,7 +66,7 @@ module.exports = {
     'declaration-block-no-duplicate-properties'         : true,
     'declaration-block-no-redundant-longhand-properties': true,
     'declaration-block-no-shorthand-property-overrides' : true,
-    'declaration-block-properties-order'                : 'alphabetical',
+    'declaration-block-properties-order'                : 'alphabetical', // duplicated 7.8.0
     'declaration-block-semicolon-newline-after'         : 'always',
     'declaration-block-semicolon-newline-before'        : 'never-multi-line',
     'declaration-block-semicolon-space-after'           : 'always-single-line',
@@ -80,7 +80,7 @@ module.exports = {
     'block-closing-brace-space-after'      : 'never-single-line',
     'block-closing-brace-space-before'     : 'never-single-line',
     'block-no-empty'                       : true,
-    'block-no-single-line'                 : true,
+    'block-no-single-line'                 : true, // remove 8.0.0
     'block-opening-brace-newline-after'    : 'always',
     'block-opening-brace-newline-before'   : 'never-single-line',
     'block-opening-brace-space-after'      : 'never-single-line',
@@ -94,11 +94,11 @@ module.exports = {
     'selector-combinator-space-before'           : 'always',
     'selector-descendant-combinator-no-non-space': true,
     'selector-max-compound-selectors'            : 3,
-    'selector-no-empty'                          : true,
+    'selector-no-empty'                          : true, // duplicated 7.8.0
     'selector-no-id'                             : true,
     'selector-no-qualifying-type'                : true,
 
-    'selector-no-universal'                         : true,
+    'selector-no-universal'                         : true, // duplicated 7.12.0
     'selector-no-vendor-prefix'                     : true,
     'selector-pseudo-class-case'                    : 'lower',
     'selector-pseudo-class-no-unknown'              : true,
@@ -106,7 +106,7 @@ module.exports = {
     'selector-pseudo-element-case'                  : 'lower',
     'selector-pseudo-element-colon-notation'        : 'single',
     'selector-pseudo-element-no-unknown'            : true,
-    'selector-root-no-composition'                  : true,
+    'selector-root-no-composition'                  : true, // duplicated 7.8.0
     'selector-type-case'                            : 'lower',
     'selector-type-no-unknown'                      : true,
     'selector-max-empty-lines'                      : 0,
@@ -116,7 +116,7 @@ module.exports = {
     'selector-list-comma-space-after'   : 'always-single-line',
     'selector-list-comma-space-before'  : 'never',
 
-    'root-no-standard-properties': true,
+    'root-no-standard-properties': true, // duplicated 7.8.0
 
     'rule-empty-line-before': ['always-multi-line', {
       except: [
@@ -130,7 +130,7 @@ module.exports = {
     'media-feature-name-case'                  : 'lower',
     'media-feature-name-no-unknown'            : true,
     'media-feature-name-no-vendor-prefix'      : true,
-    'media-feature-no-missing-punctuation'     : true,
+    'media-feature-no-missing-punctuation'     : true, // duplicated 7.8.0
     'media-feature-parentheses-space-inside'   : 'never',
     'media-feature-range-operator-space-after' : 'always',
     'media-feature-range-operator-space-before': 'always',
@@ -154,7 +154,7 @@ module.exports = {
     'indentation'                     : 2,
     'max-empty-lines'                 : 1,
     'max-line-length'                 : 80,
-    'no-browser-hacks'                : true,
+    'no-browser-hacks'                : true, // duplicated 7.8.0
     'no-descending-specificity'       : true,
     'no-duplicate-selectors'          : true,
     'no-empty-source'                 : true,
