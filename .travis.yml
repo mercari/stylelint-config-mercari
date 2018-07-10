@@ -1,8 +1,0 @@
-sudo: false
-language: node_js
-node_js:
-  - stable
-before_script:
-  - npm install
-  - npm run lint
-  - npm test
