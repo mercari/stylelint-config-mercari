@@ -14,7 +14,7 @@ const sampleCss = `
 .selector-1,
 .selector-2,
 .selector-3[type="text"] {
-  background: linear-gradient(#fff, rgba(0, 0, 0, .1));
+  background: linear-gradient(217deg, rgba(255, 255, 255, .8), rgba(255, 0, 0, 0) 70.71%);
   box-sizing: border-box;
   color: #333;
 }

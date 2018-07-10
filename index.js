@@ -142,7 +142,6 @@ module.exports = {
 
     'indentation'                     : 2,
     'max-empty-lines'                 : 1,
-    'max-line-length'                 : 80,
     'no-descending-specificity'       : true,
     'no-duplicate-selectors'          : true,
     'no-empty-source'                 : true,
