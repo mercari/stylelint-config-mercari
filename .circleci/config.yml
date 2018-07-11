@@ -20,24 +20,24 @@ jobs:
       # Download and cache dependencies
       - restore_cache:
           keys:
-          - v1-dependencies-{{ checksum "package-lock.json" }}
+          - v1-dependencies-{{ checksum "yarn.lock" }}
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-      - run: npm install
+      - run: yarn install
 
       - save_cache:
           paths:
             - node_modules
-          key: v1-dependencies-{{ checksum "package-lock.json" }}
+          key: v1-dependencies-{{ checksum "yarn.lock" }}
 
       - run:
           name: lint
-          command: npm run lint
+          command: yarn run lint
 
       - run:
           name: test
-          command: npm test
+          command: yarn test
 
   publish:
     docker:
@@ -53,16 +53,6 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - "64:0a:fe:68:ae:b1:69:ec:eb:37:57:97:66:35:a6:2e"
-      - restore_cache:
-          keys:
-          - v1-dependencies-{{ checksum "package-lock.json" }}
-          # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
-      - run: npm install
-      - save_cache:
-          paths:
-            - node_modules
-          key: v1-dependencies-{{ checksum "package-lock.json" }}
       - run:
           name: Add npmrc into project directory
           command: echo "${JFROG_NPMRC_BASE64}" | base64 -d > .npmrc
