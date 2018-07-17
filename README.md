@@ -5,6 +5,11 @@
 $ npm install --save-dev @mercari/stylelint-config
 ```
 
+if you have never get modules from private registry, see below wiki and set `.npmrc`.
+
+Mercari Wiki /dev/frontend/how-to-use-mercari-npm-registry
+https://wiki.mercari.in/5b2065b8b4e3f10001d009b5
+
 ## Sample
 
 ```css
