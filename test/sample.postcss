@@ -9,24 +9,24 @@
 .selector-1,
 .selector-2,
 .selector-3[type="text"] {
-  background: linear-gradient(217deg, rgba(255, 255, 255, .8), rgba(255, 0, 0, 0) 70.71%);
   box-sizing: border-box;
   color: #333;
+  background: linear-gradient(217deg, rgba(255, 255, 255, .8), rgba(255, 0, 0, 0) 70.71%);
 }
 
 .selector-a,
 .selector-b:not(:first-child) {
-  padding: 10px;
   top: calc(calc(1em * 20) / 40);
+  padding: 10px;
 }
 
 @media (min-width >= 10em) {
   .selector {
-    /* comment 1*/
-    background-color: #ccc;
-
-    /* comment 2*/
+    /* comment 2 */
     transform: translate(1, 1) scale(4);
+
+    /* comment 1 */
+    background-color: #ccc;
   }
 }
 
@@ -35,8 +35,8 @@
 }
 
 .selector-z:after {
-  background-image: url("http://hoge/x.svg");
   content: "";
+  background-image: url("http://hoge/x.svg");
 }
 
 /* css-next */
@@ -44,8 +44,8 @@
   --font-size: 1rem;
   --color: #fff;
   --danger-theme: {
-    background: red;
     color: hwb(90, 0%, 0%, .5);
+    background: red;
   };
 }
 
@@ -67,12 +67,13 @@ body {
 
 .danger {
   @apply --danger-theme;
+
   font-size: calc(var(--font-size) * 2);
 }
 
 p:matches(:first-child, .special) {
-  background-color: hsl(300grad 25% 15% / 70%);
   color: red;
+  background-color: hsl(300grad 25% 15% / 70%);
 }
 
 @custom-media --small-viewport (max-width: 30em);

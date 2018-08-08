@@ -1,9 +1,11 @@
-// http://stylelint.io/user-guide/rules/
-
-'use strict';
+const propertiesOrder = require('./properties-order');
 
 module.exports = {
+  plugins : [
+    'stylelint-order'
+  ],
   rules: {
+    'order/properties-order': propertiesOrder,
     'color-hex-case'  : 'lower',
     'color-hex-length': 'short',
 
