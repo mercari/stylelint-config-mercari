@@ -42,10 +42,12 @@
     "eslint": "^3.19.0",
     "nyc": "^11.0.2",
     "stylelint": "^9.4.0",
+    "stylelint-config-standard": "^18.2.0",
     "stylelint-order": "^0.8.1"
   },
   "peerDependencies": {
     "stylelint": "^9.4.0",
+    "stylelint-config-standard": "^18.2.0",
     "stylelint-order": "^0.8.1"
   }
 }

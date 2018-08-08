@@ -1,6 +1,7 @@
 const propertiesOrder = require('./properties-order');
 
 module.exports = {
+  extends : 'stylelint-config-standard',
   plugins : [
     'stylelint-order'
   ],
