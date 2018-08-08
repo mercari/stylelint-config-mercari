@@ -1,26 +1,25 @@
 import fs from 'fs';
+import util from 'util';
 import test from 'ava';
 import stylelint from 'stylelint';
 import config from '../';
 
-const sampleCss = fs.readFileSync(`${__dirname}/sample.postcss`, 'utf8');
+const readFile = util.promisify(fs.readFile);
 
-test('should return no errored', (t) => {
-  return stylelint.lint({
-    code  : sampleCss,
+test('should return no errored', async t => {
+  const buffer = await readFile(`${__dirname}/sample.postcss`);
+  const data = await stylelint.lint({
+    code: buffer.toString(),
     config: config
-  }).then((data) => {
-    const { errored, results } = data;
-    const { warnings } = results[0];
-
-    if (errored) {
-      console.log(warnings);
-    }
-
-    t.falsy(errored, 'no errored');
-    t.is(warnings.length, 0, 'flags no warnings');
-  }).catch((err) => {
-    console.log(err);
-    t.fail();
   });
+
+  const { errored, results } = data;
+  const { warnings } = results[0];
+
+  if (errored) {
+    console.log(warnings);
+  }
+
+  t.falsy(errored, 'no errored');
+  t.is(warnings.length, 0, 'flags no warnings');
 });
