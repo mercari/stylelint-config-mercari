@@ -3,7 +3,8 @@
 ## Install
 
 ```
-$ npm install --save-dev @mercari/stylelint-config stylelint stylelint-order stylelint-config-standard
+$ npm install --save-dev stylelint-config-mercari
+$ npm install --save-dev stylelint stylelint-order stylelint-config-standard
 ```
 
 ### `stylelint-config-standard`
@@ -20,7 +21,7 @@ Set your `stylelint` config to:
 
 ```json
 {
-  "extends": "@mercari/stylelint-config"
+  "extends": "mercari"
 }
 ```
 
