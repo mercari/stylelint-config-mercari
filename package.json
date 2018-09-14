@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kouzoh/mercari-stylelint-config.git"
+    "url": "git+https://github.com/kouzoh/stylelint-config-mercari.git"
   },
   "keywords": [
     "stylelint",
@@ -19,9 +19,9 @@
   "author": "abouthiroppy <git@about-hiroppy.com> (http://about-hiroppy.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kouzoh/mercari-stylelint-config/issues"
+    "url": "https://github.com/kouzoh/stylelint-config-mercari/issues"
   },
-  "homepage": "https://github.com/kouzoh/mercari-stylelint-config#readme",
+  "homepage": "https://github.com/kouzoh/stylelint-config-mercari#readme",
   "ava": {
     "files": [
       "test/**/*.js"
