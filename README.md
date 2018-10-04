@@ -28,3 +28,9 @@ Set your `stylelint` config to:
 ## Example
 
 See `test/sample.postcss`.
+
+## License
+
+Copyright 2018 Mercari, Inc.
+
+Licensed under the MIT License.
