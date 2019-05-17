@@ -2,7 +2,7 @@ version: 2
 jobs:
   test:
     docker:
-      - image: node:8.11.2-slim
+      - image: node:12.2.0
 
     working_directory: ~/repo
 
@@ -30,10 +30,6 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package-lock.json" }}
-
-      - run:
-          name: lint
-          command: npm run lint
 
       - run:
           name: test
