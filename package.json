@@ -39,13 +39,13 @@
     "conventional-changelog-cli": "^2.0.21",
     "eslint": "^5.16.0",
     "nyc": "^14.1.1",
-    "stylelint": "^9.4.0",
+    "stylelint": "^10.0.1",
     "stylelint-config-standard": "^18.2.0",
-    "stylelint-order": "^0.8.1"
+    "stylelint-order": "^3.0.0"
   },
   "peerDependencies": {
-    "stylelint": "^9.4.0",
+    "stylelint": "^10.0.1",
     "stylelint-config-standard": "^18.2.0",
-    "stylelint-order": "^0.8.1"
+    "stylelint-order": "^3.0.0"
   }
 }
