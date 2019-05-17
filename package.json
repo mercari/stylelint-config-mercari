@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-mercari",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "A setting file for stylelint.",
   "main": "index.js",
   "scripts": {
