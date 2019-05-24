@@ -31,8 +31,7 @@
     "tap": true
   },
   "files": [
-    "index.js",
-    "properties-order.js"
+    "index.js"
   ],
   "devDependencies": {
     "ava": "^1.4.1",
