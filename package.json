@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
-    "test": "nyc ava",
-    "pretest": "npm run lint",
-    "lint": "eslint ."
+    "test": "xo && nyc ava"
   },
   "repository": {
     "type": "git",
@@ -30,18 +28,21 @@
     "failFast": true,
     "tap": true
   },
+  "xo": {
+		"space": true
+	},
   "files": [
     "index.js"
   ],
   "devDependencies": {
     "ava": "^1.4.1",
     "conventional-changelog-cli": "^2.0.21",
-    "eslint": "^5.16.0",
     "nyc": "^14.1.1",
     "stylelint": "^10.0.1",
     "stylelint-config-recess-order": "^2.0.2",
     "stylelint-config-standard": "^18.2.0",
-    "stylelint-order": "^3.0.0"
+    "stylelint-order": "^3.0.0",
+    "xo": "^0.24.0"
   },
   "peerDependencies": {
     "stylelint": "^10.0.1",
