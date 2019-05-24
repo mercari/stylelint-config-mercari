@@ -19,5 +19,5 @@ test('should return no errored', async t => {
   console.log(errored, results, warnings);
 
   t.true(errored, 'errors');
-  t.is(warnings.length, 2, 'flags 2 warnings');
+  t.is(warnings.length, 3, 'flags warnings');
 });
