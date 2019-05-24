@@ -16,10 +16,8 @@ test('should return no errored', async t => {
   const { errored, results } = data;
   const { warnings } = results[0];
 
-  if (errored) {
-    console.log(warnings);
-  }
+  console.log(errored, results, warnings);
 
-  t.falsy(errored, 'no errored');
-  t.is(warnings.length, 0, 'flags no warnings');
+  t.true(errored, 'errors');
+  t.is(warnings.length, 2, 'flags 2 warnings');
 });
