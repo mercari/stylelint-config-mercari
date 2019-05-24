@@ -2,7 +2,7 @@ import fs from 'fs';
 import util from 'util';
 import test from 'ava';
 import stylelint from 'stylelint';
-import config from '../';
+import config from '..';
 
 const readFile = util.promisify(fs.readFile);
 
