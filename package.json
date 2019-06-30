@@ -43,10 +43,10 @@
     "ava": "^2.1.0",
     "conventional-changelog-cli": "^2.0.21",
     "nyc": "^14.1.1",
-    "stylelint": "^10.0.1",
+    "stylelint": "^10.1.0",
     "xo": "^0.24.0"
   },
   "peerDependencies": {
-    "stylelint": "^10.0.1"
+    "stylelint": "^10.1.0"
   }
 }
