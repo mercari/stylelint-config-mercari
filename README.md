@@ -1,5 +1,7 @@
 # stylelint-config-mercari
 
+> The shareable config for stylelint by mercari.
+
 ## Install
 
 ```bash
