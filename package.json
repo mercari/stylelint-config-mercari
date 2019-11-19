@@ -39,17 +39,17 @@
   ],
   "dependencies": {
     "stylelint-config-property-sort-order-smacss": "^5.0.0",
-    "stylelint-config-standard": "^18.3.0",
+    "stylelint-config-standard": "^19.0.0",
     "stylelint-order": "^3.0.0"
   },
   "devDependencies": {
     "ava": "^2.1.0",
     "conventional-changelog-cli": "^2.0.21",
     "nyc": "^14.1.1",
-    "stylelint": "^10.1.0",
+    "stylelint": "^12.0.0",
     "xo": "^0.24.0"
   },
   "peerDependencies": {
-    "stylelint": "^10.1.0"
+    "stylelint": "^12.0.0"
   }
 }
