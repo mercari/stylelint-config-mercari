@@ -40,7 +40,7 @@
   "dependencies": {
     "stylelint-config-property-sort-order-smacss": "^5.0.0",
     "stylelint-config-standard": "^19.0.0",
-    "stylelint-order": "^3.0.0"
+    "stylelint-order": "^4.0.0"
   },
   "devDependencies": {
     "ava": "^2.1.0",
