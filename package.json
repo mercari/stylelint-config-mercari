@@ -4,7 +4,7 @@
   "description": "The shareable config for stylelint by mercari.",
   "main": "index.js",
   "engines": {
-    "node": ">=8"
+    "node": ">=10"
   },
   "scripts": {
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
@@ -46,10 +46,10 @@
     "ava": "^2.1.0",
     "conventional-changelog-cli": "^2.0.21",
     "nyc": "^15.0.0",
-    "stylelint": "^12.0.0",
+    "stylelint": "^13.0.0",
     "xo": "^0.25.3"
   },
   "peerDependencies": {
-    "stylelint": "^12.0.0"
+    "stylelint": "^13.0.0"
   }
 }
