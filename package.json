@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-mercari",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "The shareable config for stylelint by mercari.",
   "main": "index.js",
   "engines": {
