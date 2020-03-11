@@ -1,8 +1,8 @@
-import fs from 'fs';
-import util from 'util';
-import test from 'ava';
-import stylelint from 'stylelint';
-import config from '..';
+const fs = require('fs');
+const util = require('util');
+const test = require('ava');
+const stylelint = require('stylelint');
+const config = require('..');
 
 const readFile = util.promisify(fs.readFile);
 
