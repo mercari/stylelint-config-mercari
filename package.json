@@ -47,7 +47,7 @@
     "conventional-changelog-cli": "^2.0.21",
     "nyc": "^15.0.0",
     "stylelint": "^13.0.0",
-    "xo": "^0.28.0"
+    "xo": "^0.32.1"
   },
   "peerDependencies": {
     "stylelint": "^13.0.0"
