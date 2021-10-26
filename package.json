@@ -4,7 +4,7 @@
   "description": "The shareable config for stylelint by mercari.",
   "main": "index.js",
   "engines": {
-    "node": ">=14",
+    "node": ">=16",
     "npm": ">=7"
   },
   "scripts": {
@@ -39,18 +39,18 @@
     "index.js"
   ],
   "dependencies": {
-    "stylelint-config-property-sort-order-smacss": "^7.0.0",
-    "stylelint-config-standard": "^20.0.0",
+    "stylelint-config-property-sort-order-smacss": "^7.1.0",
+    "stylelint-config-standard": "^22.0.0",
     "stylelint-order": "^4.0.0"
   },
   "devDependencies": {
     "ava": "^3.13.0",
-    "conventional-changelog-cli": "^2.0.21",
+    "conventional-changelog-cli": "^2.1.1",
     "nyc": "^15.0.0",
-    "stylelint": "^13.11.0",
-    "xo": "^0.35.0"
+    "stylelint": "^13.13.1",
+    "xo": "^0.45.0"
   },
   "peerDependencies": {
-    "stylelint": "^13.11.0"
+    "stylelint": "^13.13.1"
   }
 }
